@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap");
+
 :root {
   --color-gray-950: #111;
   --color-white: #fff;
   --color-yellow: #f4d04e;
   --color-gray-500: #6b6b6b;
+
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
 }
 
 :root {
@@ -23,16 +30,15 @@
 }
 
 body {
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--color-yellow);
 }
 
-h1 {
-  font-weight: 800;
-}
 .container {
   margin: 0;
   min-height: 90vh;
@@ -48,12 +54,56 @@ h1 {
 
   border: 1px solid var(--color-gray-950);
   border-radius: 20px;
-  padding: 24px;
+  padding: var(--spacing-300);
   max-width: 384px;
   max-height: 522px;
 
   box-shadow: 8px 8px 0 0 #000;
   background: var(--color-white);
+}
+
+.button {
+  background-color: var(--color-yellow);
+  width: 82px;
+  height: 29px;
+ 
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-align: center;
+  border: none;
+  margin-top: var(--spacing-300);
+  margin-bottom: var(--spacing-150);
+}
+.small-bolt-text{
+  font-size: 14px;
+  font-weight: 800;
+}
+.card img{
+  width: 336px;
+  height: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--color-gray-950);
+  margin-bottom: var(--spacing-150);
+}
+.card p.title {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-gray-950);
+}
+.atavar{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+}
+.atavar img {
+  width: 32px;
+  border-radius: 50%;
 }
 /***** footer ***/
 .attribution {
